@@ -1,33 +1,31 @@
 // import './App.css';
 
-import About from "./About";
 import Footer from "./Footer";
 import Header from "./Header";
-import Home from "./Home";
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 
 const App = () =>{
   return <div>
-    <Header/>
-    <Home/>
+    <Header/>  
+    <Outlet/>
     <Footer/>   
   </div>
 }
-const appRouter = createBrowserRouter([
-  {
-    path:"/",
-    element:<App/>,
-    children:[
-      {
-        path:"/",
-        element:<Home/>,
-      },{
-        path:"/about",
-        element:<About/>
-      }
-    ]
-  }
-])
+// const appRouter = createBrowserRouter([
+//   {
+//     path:"/",
+//     element:<App/>,
+//     children:[
+//       {
+//         path:"/",
+//         element:<Home/>,
+//       },{
+//         path:"/about",
+//         element:<About/>
+//       }
+//     ]
+//   }
+// ])
 
 
 

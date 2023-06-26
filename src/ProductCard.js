@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const ProductCard = ({ product }) => {
-  console.log("Props value", product);
-  const { title, price, image } = product;
+  // console.log("Props value", product);
+  const { title, price, image,id } = product;
   return (
     <div className="card m-2" style={{ width: "18rem" }}>
       <img
@@ -21,6 +23,10 @@ const ProductCard = ({ product }) => {
         <a href="/" className="btn btn-primary">
           Buy now
         </a>
+        {/* <a href="/" className="btn btn-info mx-2">
+          View details
+        </a> */}
+        <Link to = {"product/" +id} className="btn btn-info mx-2">View details</Link>
       </div>
     </div>
   );

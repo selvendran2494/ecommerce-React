@@ -2,7 +2,7 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 const CardSkeleton = ({ cards }) => {
-  console.log(cards);
+  // console.log(cards);
   return (
     Array(cards).fill(0).map((obj,id)=> 
     <div style={{ width: "18rem" }} key={id}>
