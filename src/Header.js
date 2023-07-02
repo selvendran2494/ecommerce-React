@@ -20,7 +20,16 @@ const Header = ()=>(
         <li className="nav-item">
           {/* <a className="nav-link" href="/">Contact us</a> */}
           <Link className="nav-link" to="/contact">Contact us</Link>
-        </li>      
+        </li>   
+        <li className="nav-item">   
+          <Link className="nav-link" to="/counter">Counter</Link>
+        </li> 
+        <li className="nav-item">      
+          <Link className="nav-link" to="/LoginForm">Login Form</Link>
+        </li>    
+        <li className="nav-item">   
+          <Link className="nav-link" to="/todoList">Todo List</Link>
+        </li>          
       </ul>
     </div>
   </div>

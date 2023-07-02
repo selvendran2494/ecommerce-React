@@ -54,3 +54,16 @@ code {
     margin: 20px 0;
     display: inline-block;}
 	.contant_box_404{ margin-top:-50px;}
+
+  .app {
+    padding: 30px;
+    background-color: floralwhite;
+  }
+  
+  .todo {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 1.25rem;
+  }

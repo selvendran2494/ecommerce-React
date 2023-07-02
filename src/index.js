@@ -12,6 +12,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Contact from "./Contact";
 import PageNotFound from "./PageNotFound";
 import ProductDetail from "./ProductDetail";
+import Counter from "./Counter";
+import LoginForm from "./LoginForm";
+import Todo from "./Todo";
 
 const appRouter = createBrowserRouter([
   {
@@ -34,6 +37,18 @@ const appRouter = createBrowserRouter([
         path:"product/:id",
         element:<ProductDetail/>
       },
+      {
+        path:"/counter",
+        element:<Counter/>
+      },
+      {
+        path:"/LoginForm",
+        element:<LoginForm/>
+      },
+      {
+        path:"/todoList",
+        element:<Todo/>
+      }
       
     ],
     errorElement:<PageNotFound/>
