@@ -15,6 +15,8 @@ import ProductDetail from "./ProductDetail";
 import Counter from "./Counter";
 import LoginForm from "./LoginForm";
 import Todo from "./Todo";
+import Classbased from "./Classbased";
+
 
 const appRouter = createBrowserRouter([
   {
@@ -48,6 +50,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/todoList",
         element:<Todo/>
+      },
+      {
+        path:"/classbased",
+        element:<Classbased data = "SendingData"/>
       }
       
     ],
